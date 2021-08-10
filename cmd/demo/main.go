@@ -26,7 +26,7 @@ var (
 
 func main() {
 	flag.DurationVar(&period, "period", 100*time.Second, "The period that the demo is being executed")
-	flag.StringVar(&resourceName, "resource-name", "https://management.azure.com/", "The resource name to grant the access token")
+	flag.StringVar(&resourceName, "resource-name", "https://management.usgovcloudapi.net/", "The resource name to grant the access token")
 	flag.StringVar(&subscriptionID, "subscription-id", "", "The Azure subscription ID")
 	flag.StringVar(&resourceGroup, "resource-group", "", "The resource group name which the user-assigned identity read access to")
 	flag.StringVar(&identityClientID, "identity-client-id", "", "The user-assigned identity client ID")
